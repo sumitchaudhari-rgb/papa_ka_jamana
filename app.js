@@ -2,13 +2,139 @@
    SONGSWALA - Retro Barber Shop Radio Player Application (Local MP3 Version)
    ========================================================================== */
 
-// Curated List of Songs (Ready for new uploads)
-const PLAYLIST = [
+// Curated List of Classic Hindi Songs
+let PLAYLIST = [
   {
     id: 0,
-    title: "बैरन (Bairan)",
-    artist: "Banjaare",
-    audioUrl: "songs/Bairan_–_Animated_Love_Story___Banjaare__Official_Video_(48k).mp3",
+    title: "Aa Chal Ke Tujhe (आ चल के तुझे)",
+    artist: "Kishore Kumar",
+    audioUrl: "songs/Aa_Chal_Ke_Tujhe_with_Lyrics___आ_चल_के_तुझे_के_बोल___Door_Gagan_Ki_Chhaon_Mein(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 1,
+    title: "Aaj Kal Tere Mere Pyar Ke Charche",
+    artist: "Mohd. Rafi",
+    audioUrl: "songs/Aaj_Kal_Tere_Mere_Pyar_Ke_Charche_-_Mohd.Rafi___Shammi_Kapoor,_Mumtaz___Brahmachari(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 2,
+    title: "Chura Liya Hai Tumne Jo Dil Ko",
+    artist: "Asha Bhosle & Mohammed Rafi",
+    audioUrl: "songs/Chura_Liya_Hai_Tumne_Jo_Dil_Ko___Asha_Bhosle___Mohammed_Rafi___Yaadon_Ki_Baaraat___Evergreen_Song(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 3,
+    title: "Ek Main Aur Ek Tu (एक मैं और एक तू)",
+    artist: "Kishore Kumar",
+    audioUrl: "songs/Ek_Main_Aur_Ek_Tu_with_lyrics___एक_मैं_और_एक_तू___Khel_Khel_Mein___Rishi_Kapoor___Nitu_Singh(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 4,
+    title: "Hum Tere Pyar Mein Sara Aalam",
+    artist: "Lata Mangeshkar",
+    audioUrl: "songs/Hum_Tere_Pyar_Mein_Sara_Aalam__4k____Dil_Ek_Mandir___Lata_Mangeshkar_Romantic_Song___Romantic_Song(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 5,
+    title: "In Aankhon Ki Masti Ke",
+    artist: "Asha Bhosle",
+    audioUrl: "songs/In_Akhon_Ki_Masti_Ke___Asha_Bhosle___Lyrical_Video___Rekha_Songs___Umrao_Jaan___Ghazal_Romantic(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 6,
+    title: "Jaane Wo Kaise Log The",
+    artist: "Hemant Kumar",
+    audioUrl: "songs/Jaane_Wo_Kaise_Log_The_Jinke_Pyar_Ko_Pyar_Mila_-_Hemant_Kumar_Best_Sad_Song(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 7,
+    title: "Jahan Mein Aesa Kaun Hai",
+    artist: "Asha Bhosle",
+    audioUrl: "songs/Jahan_Mein_Aesa_Kaun_Hai___Hum_Dono___Asha_Bhosle___Dev_Anand___Sahir_Ludhianvi___Old_Is_Gold(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 8,
+    title: "Kabhi Kabhie Mere Dil Mein",
+    artist: "Mukesh",
+    audioUrl: "songs/Kabhi_Kabhie_Mere_Dil_Mein_-_Amitabh_Bachchan_-_Mukesh_-_Kabhi_Kabhie_[1976](0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 9,
+    title: "Bahon Mein Chale Aao",
+    artist: "Lata Mangeshkar",
+    audioUrl: "songs/Lata_Mangeshkar___Bahon_Mein_Chale_Aao_Full_Song___Sanjeev_Kumar___Jaya_Bhaduri___70s_Old_Hindi_Song(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 10,
+    title: "Lag Ja Gale",
+    artist: "Lata Mangeshkar",
+    audioUrl: "songs/Lata_Mangeshkar___Lag_Ja_Gale___Old_Hindi_Sad_Song___Iconic_Bollywood_Song(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 11,
+    title: "Main Pal Do Pal Ka Shayar Hoon",
+    artist: "Mukesh",
+    audioUrl: "songs/Main_Pal_Do_Pal_Ka_Shayar_Hoon_Full_Song___Kabhi_Kabhie___Amitabh_Bachchan,_Rakhee___Mukesh,_Khayyam(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 12,
+    title: "Pal Pal Dil Ke Paas",
+    artist: "Kishore Kumar",
+    audioUrl: "songs/Pal_Pal_Dil_Ke_Paas__4K____Black_Mail_1973___Kishore_Kumar_Romantic_Hits___Dharmendra,_Rakhee(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 13,
+    title: "Saagar Jaisi Aankhon Wali",
+    artist: "Kishore Kumar",
+    audioUrl: "songs/Saagar_Jaisi_Aankhon_Wali__Lyrical_Video____Kishore_Kumar___R._D._Burman___Revibe___Hindi_Songs(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 14,
+    title: "Tera Mujhse Hai Pehle Ka Naata Koi",
+    artist: "Kishore Kumar",
+    audioUrl: "songs/Tera_Mujhse_Hai_Pehle_Ka_Naata_Koi___Kishore_Kumar___Aa_Gale_Lag_Jaa_1973_Songs__Sharmila_Tagore(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 15,
+    title: "Unko Bhi Humse Mohabbat Ho Zaroori To Nahin",
+    artist: "Unknown",
+    audioUrl: "songs/Unko_Bhi_Humse_Mohabbat_Ho_Zaroori_To_Nahin_-_उनको_भी_हमसे_मोहब्बत_हो_ज़रूरी_तो_नहीं(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 16,
+    title: "जाने कहाँ मेरा जिगर गया जी",
+    artist: "Mohd. Rafi",
+    audioUrl: "songs/जाने_कहाँ_मेरा_जिगर_गया_जी__Color_4K__Johnny_Walker,_Mohd_Rafi___Mr___Mrs_55___Old_Hindi_Songs(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 17,
+    title: "हम तेरे प्यार में",
+    artist: "Lata Mangeshkar",
+    audioUrl: "songs/हम_तेरे_प्यार_में_[HD]_Video_Song___लता_मंगेशकर___राज_कुमार,_मीना_कुमारी,_महमूद___दिल_एक_मंदिर_1963(0).mp3",
+    coverUrl: "assets/image.png"
+  },
+  {
+    id: 18,
+    title: "होठों से छूलो तुम (Hothon Se Chhulo Tum)",
+    artist: "Jagjit Singh",
+    audioUrl: "songs/होठों_से_छूलो_तुम...__Hothon_Se_Chhulo_Tum___Prem_Geet___Jagjit_Singh___Ghazal___Best_Romantic_Songs(0).mp3",
     coverUrl: "assets/image.png"
   }
 ];
