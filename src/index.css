@@ -1,0 +1,362 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Google Font imports already in index.html ── */
+
+:root {
+  --color-bg-900: #060d17;
+  --color-bg-800: #0c1829;
+  --color-bg-700: #16283d;
+  --color-bg-600: #1e3450;
+  --color-accent-violet: #8b7cf6;
+  --color-accent-gold: #f59e0b;
+  --color-accent-amber: #fbbf24;
+  --color-accent-teal: #14b8a6;
+  --color-cream: #fef3c7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-900);
+  color: white;
+  font-family: 'Outfit', 'Mukta', 'Noto Sans Devanagari', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ── Custom scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg-900); }
+::-webkit-scrollbar-thumb { background: var(--color-accent-violet); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #a59df8; }
+
+/* ── Devanagari font helpers ── */
+.font-dev-hero {
+  font-family: 'Rozha One', serif;
+}
+.font-dev-title {
+  font-family: 'Yatra One', cursive;
+}
+.font-dev-body {
+  font-family: 'Mukta', 'Noto Sans Devanagari', sans-serif;
+}
+
+/* ── Glassmorphism utility ── */
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-dark {
+  background: rgba(6, 13, 23, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ── Vinyl record ── */
+.vinyl-disc {
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%,
+    #1a1a1a 0%,
+    #111 18%,
+    #222 19%,
+    #111 20%,
+    #222 35%,
+    #111 36%,
+    #222 50%,
+    #111 51%,
+    #222 65%,
+    #111 66%,
+    #333 100%
+  );
+  box-shadow:
+    0 0 0 4px #555,
+    0 0 20px rgba(0,0,0,0.8),
+    0 0 40px rgba(139,124,246,0.3);
+}
+
+.vinyl-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36%;
+  height: 36%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.5rem;
+  text-align: center;
+  font-family: 'Rozha One', serif;
+}
+
+/* ── Progress bar ── */
+.progress-bar {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.15);
+  cursor: pointer;
+  outline: none;
+}
+.progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(139,124,246,0.8);
+  transition: transform 0.1s;
+}
+.progress-bar::-webkit-slider-thumb:hover {
+  transform: scale(1.3);
+}
+.progress-bar::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+}
+
+/* Volume bar */
+.volume-bar {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 80px;
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.2);
+  cursor: pointer;
+  outline: none;
+}
+.volume-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-accent-violet);
+  cursor: pointer;
+}
+
+/* ── Equalizer animation bars ── */
+.eq-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 16px;
+}
+.eq-bar {
+  width: 3px;
+  background: var(--color-accent-violet);
+  border-radius: 1px;
+  transform-origin: bottom;
+  animation: eq-bar 1.2s ease-in-out infinite;
+}
+.eq-bar:nth-child(2) { animation-delay: 0.2s; }
+.eq-bar:nth-child(3) { animation-delay: 0.4s; }
+.eq-bar:nth-child(4) { animation-delay: 0.1s; }
+.eq-bar:nth-child(5) { animation-delay: 0.3s; }
+
+@keyframes eq-bar {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+
+/* ── Tonearm ── */
+.tonearm {
+  transform-origin: top right;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tonearm.playing {
+  transform: rotate(-28deg);
+}
+.tonearm.paused {
+  transform: rotate(-42deg);
+}
+
+/* ── Glow effects ── */
+.glow-violet {
+  box-shadow: 0 0 20px rgba(139,124,246,0.5), 0 0 40px rgba(139,124,246,0.2);
+}
+.glow-gold {
+  box-shadow: 0 0 20px rgba(245,158,11,0.5), 0 0 40px rgba(245,158,11,0.2);
+}
+.text-glow {
+  text-shadow: 0 0 30px rgba(139,124,246,0.8), 0 0 60px rgba(139,124,246,0.4);
+}
+.text-glow-gold {
+  text-shadow: 0 0 20px rgba(245,158,11,0.8), 0 0 40px rgba(245,158,11,0.4);
+}
+
+/* ── Hero gradient overlay ── */
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(6,13,23,0.3) 0%,
+    rgba(6,13,23,0.5) 40%,
+    rgba(6,13,23,0.85) 75%,
+    rgba(6,13,23,1) 100%
+  );
+}
+
+/* ── Song card hover ── */
+.song-card {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.song-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5), 0 0 20px rgba(139,124,246,0.2);
+}
+
+/* ── Decade badge ── */
+.decade-badge {
+  background: linear-gradient(135deg, rgba(139,124,246,0.3), rgba(20,184,166,0.2));
+  border: 1px solid rgba(139,124,246,0.4);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+}
+
+/* ── Navigation active state ── */
+.nav-active {
+  color: var(--color-accent-violet);
+  border-bottom: 2px solid var(--color-accent-violet);
+}
+
+/* ── Modal backdrop ── */
+.modal-backdrop {
+  background: rgba(6,13,23,0.95);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+/* ── Queue item drag handle ── */
+.queue-item {
+  transition: background 0.15s ease;
+}
+.queue-item:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+/* ── Floating player bar ── */
+.player-bar {
+  background: rgba(10, 20, 35, 0.92);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .player-bar-desktop { display: none; }
+  .player-bar-mobile { display: flex; }
+}
+@media (min-width: 769px) {
+  .player-bar-mobile { display: none; }
+}
+
+/* ── Animated bg gradient orbs ── */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.12;
+  pointer-events: none;
+  animation: float 8s ease-in-out infinite;
+}
+.orb-1 {
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, #8b7cf6, transparent);
+  top: -100px; left: -100px;
+  animation-delay: 0s;
+}
+.orb-2 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, #f59e0b, transparent);
+  top: 30%; right: -100px;
+  animation-delay: 2s;
+}
+.orb-3 {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, #14b8a6, transparent);
+  bottom: 10%; left: 30%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-20px) scale(1.05); }
+}
+
+/* ── Playlist grid ── */
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+/* ── Checkbox / radio custom ── */
+.filter-chip {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.filter-chip:hover {
+  border-color: var(--color-accent-violet);
+  background: rgba(139,124,246,0.15);
+}
+.filter-chip.active {
+  background: rgba(139,124,246,0.25);
+  border-color: var(--color-accent-violet);
+  color: var(--color-accent-violet);
+}
+
+/* ── Search input ── */
+.search-input {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: white;
+  transition: all 0.2s ease;
+}
+.search-input:focus {
+  outline: none;
+  border-color: var(--color-accent-violet);
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 0 0 3px rgba(139,124,246,0.2);
+}
+.search-input::placeholder {
+  color: rgba(255,255,255,0.35);
+}
+
+/* ── Scrollable horizontal chips ── */
+.chips-scroll {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.chips-scroll::-webkit-scrollbar { display: none; }
+
+/* ── Liked heart ── */
+.heart-btn {
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.heart-btn.liked {
+  color: #f43f5e;
+  transform: scale(1.2);
+}
+.heart-btn:active {
+  transform: scale(0.85);
+}

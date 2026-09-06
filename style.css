@@ -246,24 +246,23 @@ body {
 }
 
 .logo-text {
-  font-family: var(--font-primary);
+  font-family: 'Rozha One', 'Yatra One', var(--font-primary);
   font-weight: 800;
-  font-size: clamp(2rem, 5vw, 3.2rem);
-  letter-spacing: 0.4rem;
-  background: linear-gradient(135deg, #ffffff 30%, rgba(255, 255, 255, 0.4) 100%);
+  font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+  letter-spacing: 0.1rem;
+  background: linear-gradient(135deg, #ffffff 40%, rgba(255, 255, 255, 0.7) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.6));
 }
 
 .logo-sub {
-  font-family: var(--font-hud);
-  font-size: 0.85rem;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
+  font-family: 'Mukta', var(--font-hud);
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
   color: var(--glass-text-muted);
   margin-top: 0.25rem;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 /* Vinyl Mechanics styling */
