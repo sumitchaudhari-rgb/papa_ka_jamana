@@ -20,122 +20,150 @@ let PLAYLIST = [
   },
   {
     id: 2,
-    title: "Chura Liya Hai Tumne Jo Dil Ko",
-    artist: "Asha Bhosle & Mohammed Rafi",
-    audioUrl: "songs/Chura_Liya_Hai_Tumne_Jo_Dil_Ko___Asha_Bhosle___Mohammed_Rafi___Yaadon_Ki_Baaraat___Evergreen_Song(0).mp3",
-    coverUrl: "assets/cover_chura_liya.jpg"
+    title: "Ajeeb Dastan Hai Yeh (अजीब दास्ताँ है ये)",
+    artist: "Lata Mangeshkar",
+    audioUrl: "songs/Ajeeb_Dastan_Hai_Yeh(0).mp3",
+    coverUrl: "assets/cover_ajeeb_dastan.jpg"
   },
   {
     id: 3,
-    title: "Ek Main Aur Ek Tu (एक मैं और एक तू)",
-    artist: "Kishore Kumar",
-    audioUrl: "songs/Ek_Main_Aur_Ek_Tu(0).mp3",
-    coverUrl: "assets/cover_ek_main.jpg"
-  },
-  {
-    id: 4,
-    title: "Hum Tere Pyar Mein Sara Aalam",
-    artist: "Lata Mangeshkar",
-    audioUrl: "songs/Hum_Tere_Pyar_Mein_Sara_Aalam__4k____Dil_Ek_Mandir___Lata_Mangeshkar_Romantic_Song___Romantic_Song(0).mp3",
-    coverUrl: "assets/cover_hum_tere_sara_aalam.jpg"
-  },
-  {
-    id: 5,
-    title: "In Aankhon Ki Masti Ke",
-    artist: "Asha Bhosle",
-    audioUrl: "songs/In_Akhon_Ki_Masti_Ke___Asha_Bhosle___Lyrical_Video___Rekha_Songs___Umrao_Jaan___Ghazal_Romantic(0).mp3",
-    coverUrl: "assets/cover_in_aankhon.jpg"
-  },
-  {
-    id: 6,
-    title: "Jaane Wo Kaise Log The",
-    artist: "Hemant Kumar",
-    audioUrl: "songs/Jaane_Wo_Kaise_Log_The_Jinke_Pyar_Ko_Pyar_Mila_-_Hemant_Kumar_Best_Sad_Song(0).mp3",
-    coverUrl: "assets/cover_jaane_wo_kaise.jpg"
-  },
-  {
-    id: 7,
-    title: "Jahan Mein Aesa Kaun Hai",
-    artist: "Asha Bhosle",
-    audioUrl: "songs/Jahan_Mein_Aesa_Kaun_Hai___Hum_Dono___Asha_Bhosle___Dev_Anand___Sahir_Ludhianvi___Old_Is_Gold(0).mp3",
-    coverUrl: "assets/cover_jahan_mein_aesa.jpg"
-  },
-  {
-    id: 8,
-    title: "Kabhi Kabhie Mere Dil Mein",
-    artist: "Mukesh",
-    audioUrl: "songs/Kabhi_Kabhie_Mere_Dil_Mein_-_Amitabh_Bachchan_-_Mukesh_-_Kabhi_Kabhie_[1976](0).mp3",
-    coverUrl: "assets/cover_kabhi_kabhie.jpg"
-  },
-  {
-    id: 9,
     title: "Bahon Mein Chale Aao",
     artist: "Lata Mangeshkar",
     audioUrl: "songs/Lata_Mangeshkar___Bahon_Mein_Chale_Aao_Full_Song___Sanjeev_Kumar___Jaya_Bhaduri___70s_Old_Hindi_Song(0).mp3",
     coverUrl: "assets/cover_bahon_mein.jpg"
   },
   {
+    id: 4,
+    title: "Chura Liya Hai Tumne Jo Dil Ko",
+    artist: "Asha Bhosle & Mohammed Rafi",
+    audioUrl: "songs/Chura_Liya_Hai_Tumne_Jo_Dil_Ko___Asha_Bhosle___Mohammed_Rafi___Yaadon_Ki_Baaraat___Evergreen_Song(0).mp3",
+    coverUrl: "assets/cover_chura_liya.jpg"
+  },
+  {
+    id: 5,
+    title: "Dard-E-Dil Dard-E-Jigar (दर्द-ए-दिल दर्द-ए-जिगर)",
+    artist: "Mohammed Rafi",
+    audioUrl: "songs/Dard_E_Dil_Dard_E_Jigar(0).mp3",
+    coverUrl: "assets/cover_dard_e_dil.jpg"
+  },
+  {
+    id: 6,
+    title: "Dekha Ek Khwab (देखा एक ख़्वाब)",
+    artist: "Kishore Kumar & Lata Mangeshkar",
+    audioUrl: "songs/Dekha_Ek_Khwab(0).mp3",
+    coverUrl: "assets/cover_dekha_ek_khwab.jpg"
+  },
+  {
+    id: 7,
+    title: "Ek Main Aur Ek Tu (एक मैं और एक तू)",
+    artist: "Kishore Kumar",
+    audioUrl: "songs/Ek_Main_Aur_Ek_Tu(0).mp3",
+    coverUrl: "assets/cover_ek_main.jpg"
+  },
+  {
+    id: 8,
+    title: "Hothon Se Chhulo Tum (होठों से छूलो तुम)",
+    artist: "Jagjit Singh",
+    audioUrl: "songs/Hothon_Se_Chhulo_Tum(0).mp3",
+    coverUrl: "assets/cover_hothon_se_chhulo_tum.jpg"
+  },
+  {
+    id: 9,
+    title: "Hum Tere Pyar Mein (हम तेरे प्यार में)",
+    artist: "Lata Mangeshkar",
+    audioUrl: "songs/Hum_Tere_Pyar_Mein_HD(0).mp3",
+    coverUrl: "assets/cover_hum_tere_hd.jpg"
+  },
+  {
     id: 10,
+    title: "In Aankhon Ki Masti Ke",
+    artist: "Asha Bhosle",
+    audioUrl: "songs/In_Akhon_Ki_Masti_Ke___Asha_Bhosle___Lyrical_Video___Rekha_Songs___Umrao_Jaan___Ghazal_Romantic(0).mp3",
+    coverUrl: "assets/cover_in_aankhon.jpg"
+  },
+  {
+    id: 11,
+    title: "Jaane Wo Kaise Log The",
+    artist: "Hemant Kumar",
+    audioUrl: "songs/Jaane_Wo_Kaise_Log_The_Jinke_Pyar_Ko_Pyar_Mila_-_Hemant_Kumar_Best_Sad_Song(0).mp3",
+    coverUrl: "assets/cover_jaane_wo_kaise.jpg"
+  },
+  {
+    id: 12,
+    title: "Jahan Mein Aesa Kaun Hai",
+    artist: "Asha Bhosle",
+    audioUrl: "songs/Jahan_Mein_Aesa_Kaun_Hai___Hum_Dono___Asha_Bhosle___Dev_Anand___Sahir_Ludhianvi___Old_Is_Gold(0).mp3",
+    coverUrl: "assets/cover_jahan_mein_aesa.jpg"
+  },
+  {
+    id: 13,
+    title: "Jane Kahan Mera Jigar Gaya Ji (जाने कहाँ मेरा जिगर गया जी)",
+    artist: "Mohd. Rafi",
+    audioUrl: "songs/Jane_Kahan_Mera_Jigar_Gaya_Ji(0).mp3",
+    coverUrl: "assets/cover_jane_kahan.jpg"
+  },
+  {
+    id: 14,
+    title: "Kabhi Kabhie Mere Dil Mein",
+    artist: "Mukesh",
+    audioUrl: "songs/Kabhi_Kabhie_Mere_Dil_Mein_-_Amitabh_Bachchan_-_Mukesh_-_Kabhi_Kabhie_[1976](0).mp3",
+    coverUrl: "assets/cover_kabhi_kabhie.jpg"
+  },
+  {
+    id: 15,
+    title: "Kya Hua Tera Wada (क्या हुआ तेरा वादा)",
+    artist: "Mohammed Rafi",
+    audioUrl: "songs/Kya_Hua_Tera_Wada(0).mp3",
+    coverUrl: "assets/cover_kya_hua_tera_wada.jpg"
+  },
+  {
+    id: 16,
     title: "Lag Ja Gale",
     artist: "Lata Mangeshkar",
     audioUrl: "songs/Lata_Mangeshkar___Lag_Ja_Gale___Old_Hindi_Sad_Song___Iconic_Bollywood_Song(0).mp3",
     coverUrl: "assets/cover_lag_ja_gale.jpg"
   },
   {
-    id: 11,
+    id: 17,
     title: "Main Pal Do Pal Ka Shayar Hoon",
     artist: "Mukesh",
     audioUrl: "songs/Main_Pal_Do_Pal_Ka_Shayar_Hoon_Full_Song___Kabhi_Kabhie___Amitabh_Bachchan,_Rakhee___Mukesh,_Khayyam(0).mp3",
     coverUrl: "assets/cover_main_pal_do_pal.jpg"
   },
   {
-    id: 12,
+    id: 18,
     title: "Pal Pal Dil Ke Paas",
     artist: "Kishore Kumar",
     audioUrl: "songs/Pal_Pal_Dil_Ke_Paas__4K____Black_Mail_1973___Kishore_Kumar_Romantic_Hits___Dharmendra,_Rakhee(0).mp3",
     coverUrl: "assets/cover_pal_pal_dil_ke_paas.jpg"
   },
   {
-    id: 13,
+    id: 19,
     title: "Saagar Jaisi Aankhon Wali",
     artist: "Kishore Kumar",
     audioUrl: "songs/Saagar_Jaisi_Aankhon_Wali__Lyrical_Video____Kishore_Kumar___R._D._Burman___Revibe___Hindi_Songs(0).mp3",
     coverUrl: "assets/cover_saagar.jpg"
   },
   {
-    id: 14,
+    id: 20,
+    title: "Saathiya Tune Kya Kiya (साथिया तूने क्या किया)",
+    artist: "S.P. Balasubrahmanyam & K.S. Chithra",
+    audioUrl: "songs/Saathiya_Tune_Kya_Kiya(0).mp3",
+    coverUrl: "assets/cover_saathiya_tune_kya_kiya.jpg"
+  },
+  {
+    id: 21,
     title: "Tera Mujhse Hai Pehle Ka Naata Koi",
     artist: "Kishore Kumar",
     audioUrl: "songs/Tera_Mujhse_Hai_Pehle_Ka_Naata_Koi___Kishore_Kumar___Aa_Gale_Lag_Jaa_1973_Songs__Sharmila_Tagore(0).mp3",
     coverUrl: "assets/cover_tera_mujhse.jpg"
   },
   {
-    id: 15,
+    id: 22,
     title: "Unko Bhi Humse Mohabbat Ho Zaroori To Nahin",
     artist: "Unknown",
     audioUrl: "songs/Unko_Bhi_Humse_Mohabbat_Ho_Zaroori_To_Nahin(0).mp3",
     coverUrl: "assets/cover_unko_bhi.jpg"
-  },
-  {
-    id: 16,
-    title: "जाने कहाँ मेरा जिगर गया जी",
-    artist: "Mohd. Rafi",
-    audioUrl: "songs/Jane_Kahan_Mera_Jigar_Gaya_Ji(0).mp3",
-    coverUrl: "assets/cover_jane_kahan.jpg"
-  },
-  {
-    id: 17,
-    title: "हम तेरे प्यार में",
-    artist: "Lata Mangeshkar",
-    audioUrl: "songs/Hum_Tere_Pyar_Mein_HD(0).mp3",
-    coverUrl: "assets/cover_hum_tere_hd.jpg"
-  },
-  {
-    id: 18,
-    title: "होठों से छूलो तुम (Hothon Se Chhulo Tum)",
-    artist: "Jagjit Singh",
-    audioUrl: "songs/Hothon_Se_Chhulo_Tum(0).mp3",
-    coverUrl: "assets/cover_hothon_se_chhulo_tum.jpg"
   }
 ];
 
