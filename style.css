@@ -664,6 +664,10 @@ body {
   height: 20px;
 }
 
+#icon-play {
+  transform: translateX(1.5px);
+}
+
 .media-play:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 22px rgba(255, 255, 255, 0.25);
