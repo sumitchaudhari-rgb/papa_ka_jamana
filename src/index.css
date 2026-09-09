@@ -182,11 +182,22 @@ body {
   transform-origin: top right;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* playing: arm swings inward over the vinyl grooves */
 .tonearm.playing {
-  transform: rotate(-28deg);
+  transform: rotate(8deg);
 }
+/* paused: arm lifted away to the right of the disc */
 .tonearm.paused {
-  transform: rotate(-42deg);
+  transform: rotate(-25deg);
+}
+
+/* ── Slow spin for playing vinyl ── */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 4s linear infinite;
 }
 
 /* ── Glow effects ── */
